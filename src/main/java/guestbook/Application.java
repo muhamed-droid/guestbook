@@ -15,6 +15,7 @@
  */
 package guestbook;
 
+import java.util.Collections;
 import java.util.stream.Stream;
 
 import org.springframework.boot.CommandLineRunner;
@@ -46,7 +47,10 @@ public class Application {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication app = new SpringApplication(Application.class);
+		app.setDefaultProperties(Collections
+				.singletonMap("server.port", "80"));
+		app.run(args);
 	}
 
 	/**
