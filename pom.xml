@@ -148,6 +148,7 @@
 						<version>1.0.27.RELEASE</version>
 					</dependency>
 				</dependencies>-->
+
 				<configuration>
 					<includeSystemScope>true</includeSystemScope>
 				</configuration>
